@@ -50,19 +50,19 @@ const Header = () => {
                     {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
                 </div>
                 <div className=" hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 bg-none ">
                         <li><a>Item 1</a></li>
                         <li>
 
                         <div className="dropdown">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn btn-ghost" onClick={toggleDropdown}>
                                 About
                                 </Link>
                                 {isOpen && (
                                     <ul className="dropdown-content">
-                                        <li><Link>Mission & Vision</Link></li>
-                                        <li><Link>Our Team</Link></li>
-                                        <li><Link>Resources</Link></li>
+                                        <li><Link to={'/mission'}>Mission & Vision</Link></li>
+                                        <li><Link to={'/ourteam'}>Our Team</Link></li>
+                                        <li><Link to={'/resouces'}>Resources</Link></li>
                                     </ul>
                                 )}
                             </div>
@@ -80,13 +80,13 @@ const Header = () => {
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn btn btn-ghost" onClick={toggleDropdown}>
                                     Research Networking
                                 </Link>
                                 {isOpen && (
                                     <ul className="dropdown-content">
-                                        <li><Link>Collaborating Research</Link></li>
-                                        <li><Link>Sourch of Publication</Link></li>
+                                        <li><Link to={'/collaborating'}>Collaborating Research</Link></li>
+                                        <li><Link to={'/sourceofpublication'}>Sourch of Publication</Link></li>
                                         
                                     </ul>
                                 )}
@@ -98,12 +98,12 @@ const Header = () => {
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn  btn btn-ghost" onClick={toggleDropdown}>
                                     CSE Specialized Lab
                                 </Link>
                                 {isOpen && (
                                     <ul className="dropdown-content">
-                                        <li><Link>Volume 1 No 1</Link></li>
+                                        <li><Link to={'/volumone'}>Volume 1 No 1</Link></li>
                                         <li><Link>Volume 1 No 2</Link></li>
                                         
                                     </ul>
@@ -116,7 +116,7 @@ const Header = () => {
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn  btn btn-ghost" onClick={toggleDropdown}>
                                     Research Update
                                 </Link>
                                 {isOpen && (
@@ -134,7 +134,7 @@ const Header = () => {
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn  btn btn-ghost" onClick={toggleDropdown}>
                                     Publications
                                 </Link>
                                 {isOpen && (
@@ -149,11 +149,11 @@ const Header = () => {
 
                         </li>
 
-                        <li><Link to={''}>Research Co-ordinator</Link></li>
+                        <li><Link to={''} className='btn-ghost'>Research Co-ordinator</Link></li>
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn btn btn-ghost" onClick={toggleDropdown}>
                                     Publishing Agreements
                                 </Link>
                                 {isOpen && (
@@ -168,12 +168,12 @@ const Header = () => {
 
                         </li>
 
-                        <li><Link to={''}>Ranking</Link></li>
-                        <li><Link to={''}>Events</Link></li>
+                        <li><Link to={''} className=' btn btn-ghost'>Ranking</Link></li>
+                        <li><Link to={''} className=' btn btn-ghost'>Events</Link></li>
 
                         <li>
-                            <div className="dropdown">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                            <div className="dropdown ">
+                                <Link className="dropdown-btn  btn btn-ghost" onClick={toggleDropdown}>
                                     Gallery
                                 </Link>
                                 {isOpen && (
