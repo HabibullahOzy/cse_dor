@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from '../../Assets/diucselogo.png'
 import { Link } from 'react-router-dom';
 import './Header.css'
+import logo1 from '../../Assets/diu_logo.png';
 
 const Header = () => {
 
@@ -46,18 +47,18 @@ const Header = () => {
                         </ul>
                     </div>
 
-                    <img className=' w-24' src={logo} alt=''></img>
+                    <img className=' w-44' src={logo} alt=''></img>
                     {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
                 </div>
-                <div className=" hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 bg-none ">
-                        <li><a>Item 1</a></li>
+                <div className=" hidden lg:flex text-2xl">
+                    <ul className="menu menu-horizontal p-5 bg-none ">
+                        
                         <li>
 
                         <div className="dropdown">
-                                <Link className="dropdown-btn btn-ghost" onClick={toggleDropdown}>
+                                <button className="dropdown-btn font-semibold" onClick={toggleDropdown}>
                                 About
-                                </Link>
+                                </button>
                                 {isOpen && (
                                     <ul className="dropdown-content">
                                         <li><Link to={'/mission'}>Mission & Vision</Link></li>
@@ -80,12 +81,12 @@ const Header = () => {
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn btn btn-ghost" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn" onClick={toggleDropdown}>
                                     Research Networking
                                 </Link>
                                 {isOpen && (
-                                    <ul className="dropdown-content">
-                                        <li><Link to={'/collaborating'}>Collaborating Research</Link></li>
+                                    <ul className="dropdown-content" style={{minWidth:186}}>
+                                        <li className='active'><Link to={'/collaborating'}>Collaborating Research</Link></li>
                                         <li><Link to={'/sourceofpublication'}>Sourch of Publication</Link></li>
                                         
                                     </ul>
@@ -98,16 +99,10 @@ const Header = () => {
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn  btn btn-ghost" onClick={toggleDropdown}>
+                                <Link to={'/csespecializedlab'} className="dropdown-btn">
                                     CSE Specialized Lab
                                 </Link>
-                                {isOpen && (
-                                    <ul className="dropdown-content">
-                                        <li><Link to={'/volumone'}>Volume 1 No 1</Link></li>
-                                        <li><Link>Volume 1 No 2</Link></li>
-                                        
-                                    </ul>
-                                )}
+                                
                             </div>
                             
 
@@ -116,7 +111,7 @@ const Header = () => {
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn  btn btn-ghost" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn" onClick={toggleDropdown}>
                                     Research Update
                                 </Link>
                                 {isOpen && (
@@ -134,7 +129,7 @@ const Header = () => {
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn  btn btn-ghost" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn" onClick={toggleDropdown}>
                                     Publications
                                 </Link>
                                 {isOpen && (
@@ -149,11 +144,11 @@ const Header = () => {
 
                         </li>
 
-                        <li><Link to={''} className='btn-ghost'>Research Co-ordinator</Link></li>
+                        <li><Link to={''} className=''>Research Co-ordinator</Link></li>
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn btn btn-ghost" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn" onClick={toggleDropdown}>
                                     Publishing Agreements
                                 </Link>
                                 {isOpen && (
@@ -168,12 +163,12 @@ const Header = () => {
 
                         </li>
 
-                        <li><Link to={''} className=' btn btn-ghost'>Ranking</Link></li>
-                        <li><Link to={''} className=' btn btn-ghost'>Events</Link></li>
+                        <li><Link to={''} className=' '>Ranking</Link></li>
+                       
 
                         <li>
                             <div className="dropdown ">
-                                <Link className="dropdown-btn  btn btn-ghost" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn" onClick={toggleDropdown}>
                                     Gallery
                                 </Link>
                                 {isOpen && (
@@ -190,9 +185,9 @@ const Header = () => {
 
                     </ul>
                 </div>
-                {/* <div className="navbar-end">
-                    <a className="btn">Button</a>
-                </div> */}
+                <div className="navbar-end w-36">
+                   <img src={logo1} alt='' className=' logo-des '></img>
+                </div>
             </div>
         </div>
     );

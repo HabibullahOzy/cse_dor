@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, EffectFlip, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -8,9 +8,10 @@ import 'swiper/css/navigation';
 
 import './Home.css'
 
+
 import img from '../../Assets/diucselogo.png'
-import img1 from '../../Assets/image1.png';
-import img2 from '../../Assets/image2.jpg';
+import img1 from '../../Assets/gallary1.png';
+import img2 from '../../Assets/gallary2.png';
 import img3 from '../../Assets/image3.jpg';
 import img4 from '../../Assets/image4.jpg';
 
@@ -25,8 +26,8 @@ const Home = () => {
     return (
         <div>
             <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
+                spaceBetween={10}
+                // centeredSlides={true}
                 autoplay={{
                     delay: 4500,
                     disableOnInteraction: false,
@@ -34,30 +35,29 @@ const Home = () => {
                 pagination={{
                     clickable: true,
                 }}
+                
                 navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
+                effect='flip'
+                modules={[Autoplay, Pagination, Navigation, EffectFlip]}
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img className=' bg-cover slider-img' src={img} alt=''></img>
+                    <img className=' bg-cover slider-img'  src={img} alt=''></img>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className=' bg-cover slider-img' src={img1} alt=''></img>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className=' slider-img' src={img2} alt=''></img>
+                    <img className='bg-cover slider-img' src={img2} alt=''></img>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className=' slider-img' src={img3} alt=''></img>
+                    <img className='bg-cover slider-img' src={img} alt=''></img>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className=' slider-img' src={img4} alt=''></img>
+                    <img className='bg-cover slider-img' src={img} alt=''></img>
                 </SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
+
                 <div className="autoplay-progress" slot="container-end">
                     <svg viewBox="0 0 48 48" ref={progressCircle}>
                         <circle cx="24" cy="24" r="20"></circle>
