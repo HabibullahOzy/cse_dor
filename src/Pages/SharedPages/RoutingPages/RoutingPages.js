@@ -8,6 +8,7 @@ import Collaborating from "../../FixedPages/RNetworking/CollaboratingR/Collabora
 import SouceOfPublication from "../../FixedPages/RNetworking/SOP/SouceOfPublication";
 import CseSLab from "../../FixedPages/CseSLab/CseSLab";
 import Volumeone from "../../FixedPages/ResearchUpdate/Volumeone/Volumeone";
+import Rankings from "../../FixedPages/Rankings/Rankings";
 
 
 
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
             path: "/volumone",
             element: <Volumeone></Volumeone>
         },
+        {
+            path: "/ranking",
+            element: <Rankings></Rankings>
+        }
         
         ]
     }

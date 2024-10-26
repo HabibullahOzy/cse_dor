@@ -9,13 +9,13 @@ const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-  // Toggle the dropdown open/close
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+    // Toggle the dropdown open/close
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
     return (
         <div>
-            <div className="navbar bg-sky-200">
+            <div className="navbar bg-sky-200 justify-between">
                 <div className="navbar-start w-20">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,15 +35,135 @@ const Header = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
                             <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
+
+                                <div className="dropdown">
+                                    <button className="dropdown-btn font-semibold" onClick={toggleDropdown}>
+                                        About
+                                    </button>
+                                    {isOpen && (
+                                        <ul className="dropdown-content">
+                                            <li><Link to={'/mission'}>Mission & Vision</Link></li>
+                                            <li><Link to={'/ourteam'}>Our Team</Link></li>
+                                            <li><Link to={'/resouces'}>Resources</Link></li>
+                                        </ul>
+                                    )}
+                                </div>
+
+
+                                {/* <details>
+        <summary>about</summary>
+        <ul className="p-2">
+            <li><Link>Mission & Vision</Link></li>
+            <li><Link>Our Team</Link></li>
+            <li><Link>Resources</Link></li>
+        </ul>
+    </details> */}
                             </li>
-                            <li><a>Item 3</a></li>
+
+                            <li>
+                                <div className="dropdown">
+                                    <button className="dropdown-btn font-semibold" onClick={toggleDropdown}>
+                                        Research Networking
+                                    </button>
+                                    {isOpen && (
+                                        <ul className="dropdown-content" style={{ minWidth: 186 }}>
+                                            <li className='active'><Link to={'/collaborating'}>Collaborating Research</Link></li>
+                                            <li><Link to={'/sourceofpublication'}>Sourch of Publication</Link></li>
+
+                                        </ul>
+                                    )}
+                                </div>
+
+
+                            </li>
+
+
+                            <li>
+                                <div className="dropdown">
+                                    <Link to={'/csespecializedlab'} className="dropdown-btn font-semibold">
+                                        CSE Specialized Lab
+                                    </Link>
+
+                                </div>
+
+
+                            </li>
+
+
+                            <li>
+                                <div className="dropdown">
+                                    <Link className="dropdown-btn font-semibold" onClick={toggleDropdown}>
+                                        Research Update
+                                    </Link>
+                                    {isOpen && (
+                                        <ul className="dropdown-content">
+                                            <li><Link>Volume 1 No 1</Link></li>
+                                            <li><Link>Volume 1 No 2</Link></li>
+
+                                        </ul>
+                                    )}
+                                </div>
+
+
+                            </li>
+
+
+                            <li>
+                                <div className="dropdown">
+                                    <Link className="dropdown-btn font-semibold" onClick={toggleDropdown}>
+                                        Publications
+                                    </Link>
+                                    {isOpen && (
+                                        <ul className="dropdown-content">
+                                            <li><Link to={''}>Scopus/ISI Article</Link></li>
+                                            <li><Link to={''}>DIU Journals</Link></li>
+
+                                        </ul>
+                                    )}
+                                </div>
+
+
+                            </li>
+
+                            <li><Link to={''} className='font-semibold'>Research Co-ordinator</Link></li>
+
+                            <li>
+                                <div className="dropdown">
+                                    <Link className="dropdown-btn font-semibold" onClick={toggleDropdown}>
+                                        Publishing Agreements
+                                    </Link>
+                                    {isOpen && (
+                                        <ul className="dropdown-content">
+                                            <li><Link to={''}>Journals</Link></li>
+                                            <li><Link to={''}>Conferance</Link></li>
+
+                                        </ul>
+                                    )}
+                                </div>
+
+
+                            </li>
+
+                            <li><Link to={''} className='font-semibold '>Ranking</Link></li>
+
+
+                            <li>
+                                <div className="dropdown ">
+                                    <Link className="dropdown-btn font-semibold" onClick={toggleDropdown}>
+                                        Gallery
+                                    </Link>
+                                    {isOpen && (
+                                        <ul className="dropdown-content">
+                                            <li><Link to={''}>Photos</Link></li>
+                                            <li><Link to={''}>Videos</Link></li>
+
+                                        </ul>
+                                    )}
+                                </div>
+
+
+                            </li>
                         </ul>
                     </div>
 
@@ -52,12 +172,12 @@ const Header = () => {
                 </div>
                 <div className=" hidden lg:flex text-2xl">
                     <ul className="menu menu-horizontal p-5 bg-none ">
-                        
+
                         <li>
 
-                        <div className="dropdown">
+                            <div className="dropdown">
                                 <button className="dropdown-btn font-semibold" onClick={toggleDropdown}>
-                                About
+                                    About
                                 </button>
                                 {isOpen && (
                                     <ul className="dropdown-content">
@@ -81,112 +201,112 @@ const Header = () => {
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                                <button className="dropdown-btn font-semibold" onClick={toggleDropdown}>
                                     Research Networking
-                                </Link>
+                                </button>
                                 {isOpen && (
-                                    <ul className="dropdown-content" style={{minWidth:186}}>
+                                    <ul className="dropdown-content" style={{ minWidth: 186 }}>
                                         <li className='active'><Link to={'/collaborating'}>Collaborating Research</Link></li>
                                         <li><Link to={'/sourceofpublication'}>Sourch of Publication</Link></li>
-                                        
+
                                     </ul>
                                 )}
                             </div>
-                            
+
 
                         </li>
 
 
                         <li>
                             <div className="dropdown">
-                                <Link to={'/csespecializedlab'} className="dropdown-btn">
+                                <Link to={'/csespecializedlab'} className="dropdown-btn font-semibold">
                                     CSE Specialized Lab
                                 </Link>
-                                
+
                             </div>
-                            
+
 
                         </li>
 
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn font-semibold" onClick={toggleDropdown}>
                                     Research Update
                                 </Link>
                                 {isOpen && (
                                     <ul className="dropdown-content">
                                         <li><Link>Volume 1 No 1</Link></li>
                                         <li><Link>Volume 1 No 2</Link></li>
-                                        
+
                                     </ul>
                                 )}
                             </div>
-                            
+
 
                         </li>
 
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn font-semibold" onClick={toggleDropdown}>
                                     Publications
                                 </Link>
                                 {isOpen && (
                                     <ul className="dropdown-content">
                                         <li><Link to={''}>Scopus/ISI Article</Link></li>
                                         <li><Link to={''}>DIU Journals</Link></li>
-                                        
+
                                     </ul>
                                 )}
                             </div>
-                            
+
 
                         </li>
 
-                        <li><Link to={''} className=''>Research Co-ordinator</Link></li>
+                        <li><Link to={''} className='font-semibold'>Research Co-ordinator</Link></li>
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn font-semibold" onClick={toggleDropdown}>
                                     Publishing Agreements
                                 </Link>
                                 {isOpen && (
                                     <ul className="dropdown-content">
                                         <li><Link to={''}>Journals</Link></li>
                                         <li><Link to={''}>Conferance</Link></li>
-                                       
+
                                     </ul>
                                 )}
                             </div>
-                            
+
 
                         </li>
 
-                        <li><Link to={''} className=' '>Ranking</Link></li>
-                       
+                        <li><Link to={'/ranking'} className='font-semibold '>Ranking</Link></li>
+
 
                         <li>
                             <div className="dropdown ">
-                                <Link className="dropdown-btn" onClick={toggleDropdown}>
+                                <Link className="dropdown-btn font-semibold" onClick={toggleDropdown}>
                                     Gallery
                                 </Link>
                                 {isOpen && (
                                     <ul className="dropdown-content">
                                         <li><Link to={''}>Photos</Link></li>
                                         <li><Link to={''}>Videos</Link></li>
-                                       
+
                                     </ul>
                                 )}
                             </div>
-                            
+
 
                         </li>
 
                     </ul>
                 </div>
-                <div className="navbar-end w-36">
-                   <img src={logo1} alt='' className=' logo-des '></img>
+                <div className="navbar-end w-36 items-end">
+                    <img src={logo1} alt='' className=' logo-des '></img>
                 </div>
             </div>
         </div>
