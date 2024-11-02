@@ -208,11 +208,9 @@ const Header = () => {
                                     <ul className="dropdown-content" style={{ minWidth: 186 }}>
                                         <li className='active'><Link to={'/collaborating'}>Collaborating Research</Link></li>
                                         <li><Link to={'/sourceofpublication'}>Sourch of Publication</Link></li>
-
                                     </ul>
                                 )}
                             </div>
-
 
                         </li>
 

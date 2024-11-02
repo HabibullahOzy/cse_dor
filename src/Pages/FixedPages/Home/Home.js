@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Autoplay, EffectFlip, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -37,8 +37,8 @@ const Home = () => {
                 }}
                 
                 navigation={true}
-                effect='flip'
-                modules={[Autoplay, Pagination, Navigation, EffectFlip]}
+            
+                modules={[Autoplay, Pagination, Navigation]}
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className="mySwiper"
             >
