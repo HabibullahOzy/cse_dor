@@ -68,8 +68,8 @@ const Header = () => {
                                     </button>
                                     {isOpen && (
                                         <ul className="dropdown-content" style={{ minWidth: 186 }}>
-                                            <li className='active'><Link to={'/collaborating'}>Collaborating Research</Link></li>
-                                            <li><Link to={'/sourceofpublication'}>Sourch of Publication</Link></li>
+                                            <li className='active'><Link to={'/collaborating'}>Collaborating Industry</Link></li>
+                                            <li><Link to={'/sourceofpublication'}>Visiting Researcher</Link></li>
 
                                         </ul>
                                     )}
@@ -111,16 +111,16 @@ const Header = () => {
 
                             <li>
                                 <div className="dropdown">
-                                    <Link className="dropdown-btn font-semibold" onClick={toggleDropdown}>
+                                    <Link to={'/publications'} className="dropdown-btn font-semibold" onClick={toggleDropdown}>
                                         Publications
                                     </Link>
-                                    {isOpen && (
+                                    {/* {isOpen && (
                                         <ul className="dropdown-content">
                                             <li><Link to={''}>Scopus/ISI Article</Link></li>
                                             <li><Link to={''}>DIU Journals</Link></li>
 
                                         </ul>
-                                    )}
+                                    )} */}
                                 </div>
 
 
@@ -206,8 +206,8 @@ const Header = () => {
                                 </button>
                                 {isOpen && (
                                     <ul className="dropdown-content" style={{ minWidth: 186 }}>
-                                        <li className='active'><Link to={'/collaborating'}>Collaborating Research</Link></li>
-                                        <li><Link to={'/sourceofpublication'}>Sourch of Publication</Link></li>
+                                        <li className='active'><Link to={'/collaborating'}>Collaborating Industry</Link></li>
+                                        <li><Link to={'/sourceofpublication'}>Visiting Researcher</Link></li>
                                     </ul>
                                 )}
                             </div>
@@ -247,16 +247,16 @@ const Header = () => {
 
                         <li>
                             <div className="dropdown">
-                                <Link className="dropdown-btn font-semibold" onClick={toggleDropdown}>
+                                <Link to={'/publications'} className="dropdown-btn font-semibold" onClick={toggleDropdown}>
                                     Publications
                                 </Link>
-                                {isOpen && (
+                                {/* {isOpen && (
                                     <ul className="dropdown-content">
                                         <li><Link to={''}>Scopus/ISI Article</Link></li>
                                         <li><Link to={''}>DIU Journals</Link></li>
 
                                     </ul>
-                                )}
+                                )} */}
                             </div>
 
 

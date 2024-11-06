@@ -31,7 +31,7 @@ const CseSLab = () => {
 
                     <tr>
                         <td>
-                           <a href='https://nlp.daffodilvarsity.edu.bd/'>NLP & ML Research Lab</a> 
+                           <a href='https://nlp.daffodilvarsity.edu.bd/' target='_blank'>NLP & ML Research Lab</a> 
                         </td>
                     </tr>
 

@@ -9,6 +9,7 @@ import SouceOfPublication from "../../FixedPages/RNetworking/SOP/SouceOfPublicat
 import CseSLab from "../../FixedPages/CseSLab/CseSLab";
 import Volumeone from "../../FixedPages/ResearchUpdate/Volumeone/Volumeone";
 import Rankings from "../../FixedPages/Rankings/Rankings";
+import Publications from "../../FixedPages/Publication/Publications/Publications";
 
 
 
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
         {
             path: "/ranking",
             element: <Rankings></Rankings>
+        },
+        {
+            path: "/publications",
+            element: <Publications></Publications>
         }
         
         ]
