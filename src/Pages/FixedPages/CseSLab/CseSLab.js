@@ -9,6 +9,11 @@ const CseSLab = () => {
 
             <table className='w-1/2 mx-auto border-2 border-t-8 mt-5 border-sky-700'>
                 <tbody className='p-4'>
+                    <tr>
+                        <td>
+                           <a href='https://nlp.daffodilvarsity.edu.bd/' target='_blank'>NLP & ML Research Lab</a> 
+                        </td>
+                    </tr>
                     <tr className=' border-b-2'>
                         <td>
                             Embedded System Lab
@@ -18,22 +23,18 @@ const CseSLab = () => {
 
                     <tr>
                         <td>
-                            IoT Lab
+                            <a href='https://www.facebook.com/photo/?fbid=122121642446203336&set=a.122121642488203336'>IoT Lab</a>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            Fab Lab
+                            <a href='https://www.fablabs.io/labs/fablabdiu' target='blank'>Fab Lab</a>
                         </td>
                     </tr>
 
 
-                    <tr>
-                        <td>
-                           <a href='https://nlp.daffodilvarsity.edu.bd/' target='_blank'>NLP & ML Research Lab</a> 
-                        </td>
-                    </tr>
+                    
 
                     <tr>
 

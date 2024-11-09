@@ -14,7 +14,7 @@ const Home = () => {
             </div>
 
 
-            <div className='flex w-1/2 h-[60%]'>
+            <div className='flex w-1/2 h-1/4'>
                 <img src={img3} alt=''></img>
                 <img src={img4} alt=''></img>
             </div>
