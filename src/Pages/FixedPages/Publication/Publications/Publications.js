@@ -1,19 +1,22 @@
 import React from 'react';
+import './Publications.css'
 
 const Publications = () => {
     return (
         <div>
-            <table className=' w-1/4 mx-auto border-4 border-green-400'>
-                <tr>
-                    <td>Title</td>
-                    <td>First Author</td>
-                    <td>Co-Authors</td>
-                    <td>Department</td>
-                    <td>Publication Year</td>
-                    <td>Indexed</td>
-                    <td>Conference / Journal Name</td>
-                    <td>Conference / Journal Link</td>
-                </tr>
+            <table className='mx-auto'>
+                <thead>
+                    <tr>
+                        <td>Title</td>
+                        <td>First Author</td>
+                        <td>Co-Authors</td>
+                        <td>Department</td>
+                        <td>Publication Year</td>
+                        <td>Indexed</td>
+                        <td>Conference / Journal Name</td>
+                        <td>Conference / Journal Link</td>
+                    </tr>
+                </thead>
                 <tr>
                     <td>A Bengali Word Identification and Verification Using Machine Learning Approach</td>
                     <td>Shakibul Hasan</td>
@@ -24,26 +27,7 @@ const Publications = () => {
                     <td>2023 3rd International Conference on Advances in Electrical, Computing, Communication and Sustainable Technologies, ICAECT 2023 @</td>
                     <td><a href='https://ieeexplore.ieee.org/document/10117745/authors#authors'>https://ieeexplore.ieee.org/document/10117745/authors#authors</a></td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Md. Nasim Bin Rahman</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Mohammad Abu Nadif</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+               
                 <tr>
                     <td>A BrainNet (BrN) based New Approach to Classify Brain Stroke from CT Scan Images</td>
                     <td>Imdadul Haque</td>
@@ -54,26 +38,7 @@ const Publications = () => {
                     <td>2023 International Conference on Advancement in Computation and Computer Technologies, InCACCT 2023 @</td>
                     <td><a href='https://ieeexplore.ieee.org/document/10141780/authors'>https://ieeexplore.ieee.org/document/10141780/authors</a></td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Shomitro Kumar Ghosh</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Tanjila Jahan</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+              
                 <tr>
                     <td>A CNN-Based Novel Approach for The Detection of Compound Bangla Handwritten Characters</td>
                     <td>Sheikh Shamshad Ahmed</td>

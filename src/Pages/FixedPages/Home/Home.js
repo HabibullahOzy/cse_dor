@@ -10,7 +10,6 @@ const Home = () => {
     return (
         <div>
             <div>
-
                <Banner></Banner>
             </div>
 
@@ -20,10 +19,7 @@ const Home = () => {
                 <img src={img4} alt=''></img>
             </div>
 
-
-
         </div>
     );
 };
-
 export default Home;

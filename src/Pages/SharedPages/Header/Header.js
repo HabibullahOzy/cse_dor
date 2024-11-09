@@ -15,7 +15,7 @@ const Header = () => {
     };
     return (
         <div>
-            <div className="navbar bg-sky-200 justify-between">
+            <div className="navbar bg-sky-200 justify-between z-10">
                 <div className="navbar-start w-20">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
