@@ -10,6 +10,7 @@ import CseSLab from "../../FixedPages/CseSLab/CseSLab";
 import Volumeone from "../../FixedPages/ResearchUpdate/Volumeone/Volumeone";
 import Rankings from "../../FixedPages/Rankings/Rankings";
 import Publications from "../../FixedPages/Publication/Publications/Publications";
+import Conference from "../../FixedPages/PublishingAgreements/Conference/Conference";
 
 
 
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
         {
             path: "/publications",
             element: <Publications></Publications>
+        },
+        {
+            path: "/conference",
+            element: <Conference></Conference>
         }
         
         ]

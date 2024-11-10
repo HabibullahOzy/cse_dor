@@ -272,7 +272,7 @@ const Header = () => {
                                 {isOpen && (
                                     <ul className="dropdown-content">
                                         <li><Link to={''}>Journals</Link></li>
-                                        <li><Link to={''}>Conferance</Link></li>
+                                        <li><Link to={'/conference'}>Conferance</Link></li>
 
                                     </ul>
                                 )}
